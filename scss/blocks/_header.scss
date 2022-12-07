@@ -1,0 +1,34 @@
+.header {
+    font-style: normal;
+    font-weight: 400;
+}
+
+.header__container {
+    padding-top: 60px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.container {
+    max-width: calc(1440px - 160px * 2);
+}
+
+.header__logo-name {
+    font-size: 22px;
+    line-height: 30px;
+    padding-right: 20px;
+    align-self: center;
+}
+
+.header__logo-open {
+    align-self: center;
+    text-align: center;
+    padding: 4px 8px;
+    color: $black-color;
+    background-color: $green-color;
+    font-size: 12px;
+    line-height: 12px;
+    width: 83px;
+    height: 12px;
+    border-radius: 4px;
+}

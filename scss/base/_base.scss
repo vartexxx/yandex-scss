@@ -1,0 +1,12 @@
+$white_text-color: #FFFFFF;
+$grey_input-color: #47474C;
+$grey_text-color: #8E8E98;
+$black-color: #000000;
+$green-color: #25e197;
+$input-color: rgba(142, 142, 152, 0.2);
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: $black-color;
+    color: $white_text-color;
+}
