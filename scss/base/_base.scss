@@ -21,6 +21,10 @@ body {
     font-variant-numeric: lining-nums;
 }
 
+.container {
+    max-width: calc(1440px - 160px * 2);
+}
+
 input:hover {
     background-color: $input-hover-color;
 }

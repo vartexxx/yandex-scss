@@ -6,10 +6,6 @@
     margin: 0 auto;
 }
 
-.container {
-    max-width: calc(1440px - 160px * 2);
-}
-
 .services__cards {
     display: grid;
     grid-template-columns: repeat(2, auto);

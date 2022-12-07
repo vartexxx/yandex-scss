@@ -1,0 +1,46 @@
+.main__warranty {
+    padding-top: 60px;
+}
+
+.warranty__container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.warranty__title {
+    margin-top: 60px;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.warranty__cards {
+    margin-top: 60px;
+    display: grid;
+    grid-template: auto / repeat(4, auto);
+    column-gap: 20px;
+}
+
+.warranty__card {
+    width: 265px;
+    height: 153px;
+    background-color: $services-color;
+    border-radius: 10px;
+}
+
+.warranty__card-container {
+    margin: 20px 20px 20px 20px;
+}
+
+.warranty__card-title {
+    font-weight: 500;
+    margin-bottom: 38px;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.warranty__card-text {
+    font-size: 15px;
+    line-height: 19px;
+    color: $grey_text-color;
+}

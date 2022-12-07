@@ -12,10 +12,6 @@
     flex-direction: column;
 }
 
-.container {
-    max-width: calc(1440px - 160px * 2);
-}
-
 .about__text-container {
     display: grid;
     grid-template: repeat(2, auto) / auto;
