@@ -12,10 +12,6 @@
     flex-direction: column;
 }
 
-.container {
-    max-width: calc(1440px - 160px * 2);
-}
-
 .about__text-container {
     display: grid;
     grid-template: repeat(2, auto) / auto;
@@ -35,6 +31,7 @@
 .about__input-container {
     margin-top: 230px;
     display: flex;
+    margin-bottom: 12px;
 }
 
 .about__input {
@@ -59,7 +56,6 @@
 }
 
 .about__input-info {
-    margin: 12px auto auto 10px;
     color: $grey_input-color;
     font-size: 12px;
     line-height: 18px;

@@ -1,0 +1,37 @@
+.main__support {
+    padding-top: 60px;
+}
+
+.support__container {
+    padding-bottom: 240px;
+    border-bottom: 2px solid $border-color;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.support__title {
+    margin-top: 60px;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.support__button {
+    color: $white_text-color;
+    margin-top: 90px;
+    margin-bottom: 50px;
+    width: 306px;
+    height: 50px;
+    border-radius: 8px;
+    background-color: $grey_input-color;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.38px;
+}
+
+.support__text {
+    font-size: 32px;
+    line-height: 40px;
+    color: $grey_text-color;
+}

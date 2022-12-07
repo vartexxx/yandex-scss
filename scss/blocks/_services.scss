@@ -1,0 +1,55 @@
+.main__services {
+    padding-top: 60px;
+}
+
+.services__container {
+    margin: 0 auto;
+}
+
+.services__cards {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: auto;
+    column-gap: 20px;
+}
+
+.services__card {
+    width: 550px;
+    height: 364px;
+    background-color: $services-color;
+    border-radius: 16px;
+}
+
+.services__card-container {
+    display: flex;
+    flex-direction: column;
+    margin: 40px auto 40px 40px;
+}
+
+.services__card-title {
+    margin-bottom: 20px;
+    color: $grey_text-color;
+    font-size: 18px;
+    line-height: 18px;
+}
+
+.services__card-name {
+    margin-bottom: 40px;
+    color: $white_text-color;
+    font-size: 32px;
+    line-height: 32px;
+}
+
+.services__card-text {
+    max-width: 470px;
+    margin-bottom: 40px;
+    font-size: 32px;
+    line-height: 40px;
+    color: $grey_text-color;
+}
+
+.services__card-price {
+    color: $green-color;
+    font-size: 14px;
+    line-height: 14px;
+}

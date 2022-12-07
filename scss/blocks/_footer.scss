@@ -1,0 +1,73 @@
+.footer__container {
+    margin: 0 auto;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer__text-container {
+    display: flex;
+    margin-bottom: 84px;
+}
+
+.footer__logo-name {
+    font-size: 22px;
+    line-height: 30px;
+    padding-right: 20px;
+    align-self: center;
+}
+
+.footer__logo-open {
+    align-self: center;
+    text-align: center;
+    padding: 4px 8px;
+    color: $black-color;
+    background-color: $green-color;
+    font-size: 12px;
+    line-height: 12px;
+    width: 83px;
+    height: 12px;
+    border-radius: 4px;
+}
+
+.footer__input-container {
+    display: flex;
+}
+
+.footer__input {
+    width: calc(348px - 16px);
+    height: 50px;
+    background-color: $input-color;
+    border-radius: 8px 0px 0px 8px;
+    cursor: pointer;
+    color: $white_text-color;
+    padding-left: 16px;
+}
+
+.footer__button {
+    width: 221px;
+    height: 50px;
+    background-color: $grey_input-color;
+    color: $white_text-color;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.38px;
+    border-radius: 0px 8px 8px 0px;
+    cursor: pointer;
+}
+
+.footer__copyright {
+    margin-top: 18px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__copyright-info {
+    color: $grey_input-color;
+    font-size: 12px;
+    line-height: 18px;
+}
+.footer__copyright-text {
+    color: $grey_input-color;
+    font-size: 12px;
+    line-height: 18px;
+}
