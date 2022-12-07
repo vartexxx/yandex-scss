@@ -1,0 +1,67 @@
+.main__about {
+    padding-top: 60px;
+}
+
+.about {
+    font-weight: 400;
+    font-style: normal;
+}
+
+.about__container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.container {
+    max-width: calc(1440px - 160px * 2);
+}
+
+.about__text-container {
+    display: grid;
+    grid-template: repeat(2, auto) / auto;
+    row-gap: 20px;
+}
+
+.about__title {
+    font-size: 112px;
+    line-height: 112px;
+}
+
+.about__subtitle {
+    font-size: 80px;
+    line-height: 70px;
+}
+
+.about__input-container {
+    margin-top: 230px;
+    display: flex;
+}
+
+.about__input {
+    width: calc(348px - 16px);
+    height: 50px;
+    background-color: $input-color;
+    border-radius: 8px 0px 0px 8px;
+    cursor: pointer;
+    color: $white_text-color;
+    padding-left: 16px;
+}
+
+.about__button {
+    width: 221px;
+    height: 50px;
+    background-color: $grey_input-color;
+    color: $white_text-color;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.38px;
+    border-radius: 0px 8px 8px 0px;
+}
+
+.about__input-info {
+    margin: 12px auto auto 10px;
+    color: $grey_input-color;
+    font-size: 12px;
+    line-height: 18px;
+}
