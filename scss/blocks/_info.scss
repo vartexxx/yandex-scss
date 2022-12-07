@@ -1,0 +1,35 @@
+.main__info {
+    padding-top: 60px;
+}
+
+.info {
+    font-weight: 400;
+    font-style: normal;
+}
+
+.info__container {
+    margin: 0 auto;
+}
+
+.container {
+    max-width: calc(1440px - 160px * 2);
+}
+
+.info__text-container {
+    margin: 60px 0px 60px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.info__title {
+    margin-bottom: 60px;
+    font-size: 32px;
+    line-height: 40px;
+    color: $grey_text-color;
+}
+
+.info__subtitle {
+    font-size: 32px;
+    line-height: 40px;
+}
