@@ -31,6 +31,7 @@
 .about__input-container {
     margin-top: 230px;
     display: flex;
+    margin-bottom: 12px;
 }
 
 .about__input {
@@ -55,7 +56,6 @@
 }
 
 .about__input-info {
-    margin: 12px auto auto 10px;
     color: $grey_input-color;
     font-size: 12px;
     line-height: 18px;
