@@ -59,12 +59,16 @@
     margin-top: 18px;
     display: flex;
     justify-content: space-between;
+    @include breakpoint (tablet) {
+        flex-direction: column;
+    }
 }
 
 .footer__copyright-info {
     color: $grey_input-color;
     font-size: 12px;
     line-height: 18px;
+    margin-bottom: 60px;
 }
 .footer__copyright-text {
     color: $grey_input-color;
