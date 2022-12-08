@@ -46,6 +46,7 @@
     height: 153px;
     background-color: $services-color;
     border-radius: 10px;
+    position: relative;
     @include breakpoint (tablet) {
         width: 314px;
     }
@@ -53,6 +54,10 @@
         width: 280px;
         height: 148px;
     }
+}
+
+.warranty__card:hover {
+    background-color: $input-hover-color;
 }
 
 .warranty__card-container {
@@ -74,4 +79,13 @@
         font-size: 12px;
         line-height: 18px;
     }
+}
+
+.warranty__link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
 }

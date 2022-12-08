@@ -27,8 +27,8 @@
                     <h2 class="about__subtitle">Плёночных фотоаппаратов</h2>
                 </div>
                 <div class="about__input-container">
-                    <input type="text" class="about__input">
-                    <button type="button" class="about__button">Отремонтируйте камеру &#128076;</button>
+                    <input type="text" class="about__input" value="">
+                    <button type="submit" class="about__button">Отремонтируйте камеру &#128076;</button>
                 </div>
                 <p class="about__input-info">Напишите нам и мы свяжемся с вами.</p>
             </div>
@@ -61,6 +61,7 @@
                 <div class="services__cards">
                     <div class="services__card">
                         <div class="services__card-container">
+                            <a href="#" target="_blank" class="services__link"></a>
                             <p class="services__card-title">CLA</p>
                             <h3 class="services__card-name">Чистка камер.</h3>
                             <p class="services__card-text">
@@ -71,6 +72,7 @@
                     </div>
                     <div class="services__card">
                         <div class="services__card-container">
+                            <a href="#" target="_blank" class="services__link"></a>
                             <p class="services__card-title">Ремонт</p>
                             <h3 class="services__card-name">Ремонт камер.</h3>
                             <p class="services__card-text">
@@ -89,6 +91,7 @@
                 <div class="warranty__cards">
                     <div class="warranty__card">
                         <div class="warranty__card-container">
+                            <a href="#" target="_blank" class="warranty__link"></a>
                             <h4 class="warranty__card-title">CLA</h4>
                             <p class="warranty__card-text">
                                 После CLA мы даем гарантию на 1 год, в случае беды мы заново обслужим вашу камеру.
@@ -97,6 +100,7 @@
                     </div>
                     <div class="warranty__card">
                         <div class="warranty__card-container">
+                            <a href="#" target="_blank" class="warranty__link"></a>
                             <h4 class="warranty__card-title">Ремонт</h4>
                             <p class="warranty__card-text">
                                 После ремонта мы даем гарантию на 3 месяца или 6 месяцев.
@@ -105,6 +109,7 @@
                     </div>
                     <div class="warranty__card">
                         <div class="warranty__card-container">
+                            <a href="#" target="_blank" class="warranty__link"></a>
                             <h4 class="warranty__card-title">Пайка и адаптация</h4>
                             <p class="warranty__card-text">
                                 После пайки и адаптации питания мы даем гарантию на 1 год.
@@ -113,6 +118,7 @@
                     </div>
                     <div class="warranty__card">
                         <div class="warranty__card-container">
+                            <a href="#" target="_blank" class="warranty__link"></a>
                             <h4 class="warranty__card-title">Осмотр</h4>
                             <p class="warranty__card-text">
                                 Осмотр камеры — бесплатен, если мы что-то сломаем, поменяем деталь сами.
@@ -126,7 +132,9 @@
         <section class="main__support support">
             <div class="support__container container">
                 <h3 class="support__title">Поддержите нас &#129309;</h3>
-                <button type="button" class="support__button">Напишите нам если хотите помочь!</button>
+                <form action="#" target="_blank">
+                    <button type="submit" class="support__button">Напишите нам если хотите помочь!</button>
+                </form>
                 <p class="support__text">
                     Ещё вы сможете безвозмездно поддержать нас на Patreon, 
                     пока мы ещё создали аккаунт, но как только это сделаем, сообщим вам.
@@ -144,7 +152,7 @@
             </div>
             <div class="footer__input-container">
                 <input type="text" class="footer__input">
-                <button class="footer__button">Отремонтируйте камеру &#9996;</button>
+                <button type="submit" class="footer__button">Отремонтируйте камеру &#9996;</button>
 
             </div>
             <div class="footer__copyright">
@@ -154,5 +162,6 @@
         </div>
     </footer>
 
+    <script src="./src/js/index.js"></script>
 </body>
 </html>

@@ -27,6 +27,7 @@
     height: 364px;
     background-color: $services-color;
     border-radius: 16px;
+    position: relative;
     @include breakpoint (tablet) {
         width: 648px;
     }
@@ -34,6 +35,10 @@
         width: 280px;
         height: 282px;
     }
+}
+
+.services__card:hover {
+    background-color: $input-hover-color;
 }
 
 .services__card-container {
@@ -91,4 +96,13 @@
         font-size: 12px;
         line-height: 18px;
     }
+}
+
+.services__link {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
 }
