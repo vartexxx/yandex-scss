@@ -1,5 +1,8 @@
 .main__support {
     padding-top: 60px;
+    @include breakpoint (mobile) {
+        padding-top: 30px;
+    }
 }
 
 .support__container {
@@ -8,12 +11,27 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    @include breakpoint (tablet) {
+        padding-bottom: 210px;
+    }
+    @include breakpoint (mobile) {
+        padding-bottom: 180px;
+    }
 }
 
 .support__title {
     margin-top: 60px;
     font-size: 32px;
     line-height: 40px;
+    @include breakpoint (tablet) {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    @include breakpoint (mobile) {
+        margin-top: 40px;
+        font-size: 12px;
+        line-height: 18px;
+    }
 }
 
 .support__button {
@@ -28,10 +46,29 @@
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.38px;
+    @include breakpoint (tablet) {
+        margin-top: 80px;
+        margin-bottom: 40px;
+    }
+    @include breakpoint (mobile) {
+        margin-top: 50px;
+        margin-bottom: 30px;
+        width: 280px;
+        font-size: 12px;
+        line-height: 18px;
+    }
 }
 
 .support__text {
     font-size: 32px;
     line-height: 40px;
     color: $grey_text-color;
+    @include breakpoint (tablet) {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    @include breakpoint (mobile) {
+        font-size: 12px;
+        line-height: 18px;
+    }
 }
