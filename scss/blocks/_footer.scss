@@ -2,11 +2,18 @@
     margin: 0 auto;
     padding-top: 60px;
     padding-bottom: 60px;
+    @include breakpoint (mobile) {
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
 }
 
 .footer__text-container {
     display: flex;
     margin-bottom: 84px;
+    @include breakpoint (mobile) {
+        margin-bottom: 184px;
+    }
 }
 
 .footer__logo-name {
@@ -14,6 +21,11 @@
     line-height: 30px;
     padding-right: 20px;
     align-self: center;
+    @include breakpoint (mobile) {
+        font-size: 20px;
+        line-height: 28px;
+        padding-right: 16px;
+    }
 }
 
 .footer__logo-open {
@@ -41,6 +53,9 @@
     cursor: pointer;
     color: $white_text-color;
     padding-left: 16px;
+    @include breakpoint (mobile) {
+        width: 229px;
+    }
 }
 
 .footer__button {
@@ -53,6 +68,10 @@
     letter-spacing: 0.38px;
     border-radius: 0px 8px 8px 0px;
     cursor: pointer;
+    @include breakpoint (mobile) {
+        width: 51px;
+        overflow: hidden;
+    }
 }
 
 .footer__copyright {
@@ -62,6 +81,9 @@
     @include breakpoint (tablet) {
         flex-direction: column;
     }
+    @include breakpoint (mobile) {
+        margin-top: 10px;
+    }
 }
 
 .footer__copyright-info {
@@ -69,6 +91,9 @@
     font-size: 12px;
     line-height: 18px;
     margin-bottom: 60px;
+    @include breakpoint (mobile) {
+        margin-bottom: 40px;   
+    }
 }
 .footer__copyright-text {
     color: $grey_input-color;
