@@ -1,5 +1,8 @@
 .main__about {
     padding-top: 60px;
+    @include breakpoint (tablet) {
+        padding-top: 70px;
+    }
 }
 
 .about {
@@ -16,22 +19,37 @@
     display: grid;
     grid-template: repeat(2, auto) / auto;
     row-gap: 20px;
+    @include breakpoint (tablet) {
+        row-gap: 0px;
+    }
 }
 
 .about__title {
     font-size: 112px;
     line-height: 112px;
+    @include breakpoint (tablet) {
+        font-size: 70px;
+        line-height: 90px;
+    }
 }
 
 .about__subtitle {
     font-size: 80px;
     line-height: 70px;
+    @include breakpoint (tablet) {
+        font-size: 50px;
+        line-height: 60px;
+    }
 }
 
 .about__input-container {
     margin-top: 230px;
     display: flex;
     margin-bottom: 12px;
+    @include breakpoint (tablet) {
+        margin-top: 470px;
+        margin-bottom: 10px;
+    }
 }
 
 .about__input {
@@ -42,6 +60,9 @@
     cursor: pointer;
     color: $white_text-color;
     padding-left: 16px;
+    @include breakpoint (tablet) {
+        width: calc(427px - 16px);
+    }
 }
 
 .about__button {
