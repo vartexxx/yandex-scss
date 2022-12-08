@@ -3,6 +3,11 @@
     margin-top: 60px;
     padding-top: 60px;
     max-width: calc(1440px - 30px * 2);
+    @include breakpoint (tablet) {
+        max-width: calc(768px - 60px * 2);
+        padding-top: 52px;
+        margin-top: 0px;
+    }
 }
 
 .gallery__container {
@@ -12,6 +17,13 @@
     grid-template-areas: 
     'first-image yellow yellow'
     'green green second-image';
+    @include breakpoint (tablet) {
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: repeat(2, auto);
+        grid-template-areas: 
+        'first-image first-image yellow'
+        'green second-image second-image';
+    }
 }
 
 .gallery__image-one {
@@ -27,6 +39,10 @@
     grid-area: second-image;
     border-radius: 10px;
     margin-left: 20px;
+    @include breakpoint (tablet) {
+        width: 455px;
+        height: 344px;
+    }
 }
 
 .gallery__yellow {
@@ -37,6 +53,10 @@
     border-radius: 10px;
     margin-left: 20px;
     margin-bottom: 20px;
+    @include breakpoint (tablet) {
+        width: 180px;
+        height: 230px;
+    }
 }
 .gallery__green {
     width: 630px;
@@ -44,4 +64,8 @@
     background-color: $green-color;
     grid-area: green;
     border-radius: 10px;
+    @include breakpoint (tablet) {
+        width: 173px;
+        height: 344px;
+    }
 }
