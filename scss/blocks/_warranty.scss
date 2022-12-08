@@ -1,5 +1,8 @@
 .main__warranty {
     padding-top: 60px;
+    @include breakpoint (mobile) {
+        padding-top: 30px;
+    }
 }
 
 .warranty__container {
@@ -16,6 +19,11 @@
         font-size: 20px;
         line-height: 30px;
     }
+    @include breakpoint (mobile) {
+        margin-top: 40px;
+        font-size: 12px;
+        line-height: 18px;
+    }
 }
 
 .warranty__cards {
@@ -27,6 +35,10 @@
         grid-template: repeat(2, auto) / repeat(2, auto);
         row-gap: 20px;
     }
+    @include breakpoint (mobile) {
+        grid-template: repeat(4, auto) / auto;
+        margin-top: 40px;
+    }
 }
 
 .warranty__card {
@@ -36,6 +48,10 @@
     border-radius: 10px;
     @include breakpoint (tablet) {
         width: 314px;
+    }
+    @include breakpoint (mobile) {
+        width: 280px;
+        height: 148px;
     }
 }
 
@@ -54,4 +70,8 @@
     font-size: 15px;
     line-height: 19px;
     color: $grey_text-color;
+    @include breakpoint (mobile) {
+        font-size: 12px;
+        line-height: 18px;
+    }
 }
