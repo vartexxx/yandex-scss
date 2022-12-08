@@ -12,6 +12,10 @@
     margin-top: 60px;
     font-size: 32px;
     line-height: 40px;
+    @include breakpoint (tablet) {
+        font-size: 20px;
+        line-height: 30px;
+    }
 }
 
 .warranty__cards {
@@ -19,6 +23,10 @@
     display: grid;
     grid-template: auto / repeat(4, auto);
     column-gap: 20px;
+    @include breakpoint (tablet) {
+        grid-template: repeat(2, auto) / repeat(2, auto);
+        row-gap: 20px;
+    }
 }
 
 .warranty__card {
@@ -26,6 +34,9 @@
     height: 153px;
     background-color: $services-color;
     border-radius: 10px;
+    @include breakpoint (tablet) {
+        width: 314px;
+    }
 }
 
 .warranty__card-container {
