@@ -8,12 +8,19 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
+    @include breakpoint (tablet) {
+        padding-bottom: 210px;
+    }
 }
 
 .support__title {
     margin-top: 60px;
     font-size: 32px;
     line-height: 40px;
+    @include breakpoint (tablet) {
+        font-size: 20px;
+        line-height: 30px;
+    }
 }
 
 .support__button {
@@ -28,10 +35,18 @@
     font-size: 14px;
     line-height: 24px;
     letter-spacing: 0.38px;
+    @include breakpoint (tablet) {
+        margin-top: 80px;
+        margin-bottom: 40px;
+    }
 }
 
 .support__text {
     font-size: 32px;
     line-height: 40px;
     color: $grey_text-color;
+    @include breakpoint (tablet) {
+        font-size: 20px;
+        line-height: 30px;
+    }
 }
