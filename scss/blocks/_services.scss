@@ -1,5 +1,8 @@
 .main__services {
     padding-top: 60px;
+    @include breakpoint (mobile) {
+        padding-top: 40px;  
+    }
 }
 
 .services__container {
@@ -27,12 +30,19 @@
     @include breakpoint (tablet) {
         width: 648px;
     }
+    @include breakpoint (mobile) {
+        width: 280px;
+        height: 282px;
+    }
 }
 
 .services__card-container {
     display: flex;
     flex-direction: column;
     margin: 40px auto 40px 40px;
+    @include breakpoint (mobile) {
+        margin: 20px auto 20px 20px;   
+    }
 }
 
 .services__card-title {
@@ -40,6 +50,9 @@
     color: $grey_text-color;
     font-size: 18px;
     line-height: 18px;
+    @include breakpoint (mobile) {
+        margin-bottom: 10px;
+    }
 }
 
 .services__card-name {
@@ -47,6 +60,10 @@
     color: $white_text-color;
     font-size: 32px;
     line-height: 32px;
+    @include breakpoint (mobile) {
+        font-size: 24px;
+        margin-bottom: 28px;
+    }
 }
 
 .services__card-text {
@@ -58,10 +75,20 @@
     @include breakpoint (tablet) {
         max-width: 568px;
     }
+    @include breakpoint (mobile) {
+        font-size: 12px;
+        line-height: 18px;
+        max-width: 240px;
+        margin-bottom: 100px;
+    }
 }
 
 .services__card-price {
     color: $green-color;
     font-size: 14px;
     line-height: 14px;
+    @include breakpoint (mobile) {
+        font-size: 12px;
+        line-height: 18px;
+    }
 }
