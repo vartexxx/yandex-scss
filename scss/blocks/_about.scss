@@ -3,6 +3,9 @@
     @include breakpoint (tablet) {
         padding-top: 70px;
     }
+    @include breakpoint (mobile) {
+        padding-top: 60px;
+    }
 }
 
 .about {
@@ -22,6 +25,9 @@
     @include breakpoint (tablet) {
         row-gap: 0px;
     }
+    @include breakpoint (mobile) {
+        row-gap: 10px;
+    }
 }
 
 .about__title {
@@ -30,6 +36,10 @@
     @include breakpoint (tablet) {
         font-size: 70px;
         line-height: 90px;
+    }
+    @include breakpoint (mobile) {
+        font-size: 50px;
+        line-height: 60px;
     }
 }
 
@@ -40,6 +50,10 @@
         font-size: 50px;
         line-height: 60px;
     }
+    @include breakpoint (mobile) {
+        font-size: 30px;
+        line-height: 38px;
+    }
 }
 
 .about__input-container {
@@ -49,6 +63,9 @@
     @include breakpoint (tablet) {
         margin-top: 470px;
         margin-bottom: 10px;
+    }
+    @include breakpoint (mobile) {
+        margin-top: 260px;
     }
 }
 
@@ -63,6 +80,9 @@
     @include breakpoint (tablet) {
         width: calc(427px - 16px);
     }
+    @include breakpoint (mobile) {
+        width: calc(229px - 16px);
+    }
 }
 
 .about__button {
@@ -74,6 +94,10 @@
     line-height: 24px;
     letter-spacing: 0.38px;
     border-radius: 0px 8px 8px 0px;
+    @include breakpoint (mobile) {
+        width: 51px;
+        height: 50px;
+    }
 }
 
 .about__input-info {
