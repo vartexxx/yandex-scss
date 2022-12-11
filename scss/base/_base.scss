@@ -10,8 +10,22 @@ $input-hover-color: rgba(142, 142, 152, 0.3);
 $services-color: #1C1C1E;
 $border-color: #151515;
 
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../../src/fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: url(../../src/fonts/Roboto-Medium.ttf);
+}
+
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
     background-color: $black-color;
     color: $white_text-color;
     -webkit-font-smoothing: antialiased;

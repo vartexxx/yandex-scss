@@ -1,6 +1,18 @@
 @import '../src/normalize.css';
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../../src/fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  src: url(../../src/fonts/Roboto-Medium.ttf);
+}
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto", Arial, Helvetica, sans-serif;
   background-color: #000000;
   color: #FFFFFF;
   -webkit-font-smoothing: antialiased;
@@ -217,7 +229,6 @@ input:focus {
 @media (max-width: 767px) {
   .about__button {
     width: 51px;
-    height: 50px;
   }
 }
 
@@ -413,6 +424,15 @@ input:focus {
   }
 }
 
+.services__card {
+  background-color: #1C1C1E;
+  border-radius: 16px;
+}
+
+.services__card:hover {
+  background-color: rgba(142, 142, 152, 0.3);
+}
+
 .main__services {
   padding-top: 60px;
 }
@@ -444,36 +464,21 @@ input:focus {
 }
 
 .services__card {
-  width: 550px;
-  height: 364px;
-  background-color: #1C1C1E;
   border-radius: 16px;
-  position: relative;
-}
-@media (max-width: 1439px) {
-  .services__card {
-    width: 648px;
-  }
-}
-@media (max-width: 767px) {
-  .services__card {
-    width: 280px;
-    height: 282px;
-  }
 }
 
-.services__card:hover {
-  background-color: rgba(142, 142, 152, 0.3);
+.services__link {
+  text-decoration: none;
 }
 
 .services__card-container {
+  padding: 40px;
   display: flex;
   flex-direction: column;
-  margin: 40px auto 40px 40px;
 }
 @media (max-width: 767px) {
   .services__card-container {
-    margin: 20px auto 20px 20px;
+    padding: 20px;
   }
 }
 
@@ -535,15 +540,6 @@ input:focus {
   }
 }
 
-.services__link {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 1;
-}
-
 .main__warranty {
   padding-top: 60px;
 }
@@ -557,6 +553,11 @@ input:focus {
   margin: 0 auto;
   display: flex;
   flex-direction: column;
+}
+
+.warranty__link {
+  text-decoration: none;
+  background-color: #1C1C1E;
 }
 
 .warranty__title {
@@ -593,64 +594,54 @@ input:focus {
 }
 @media (max-width: 767px) {
   .warranty__cards {
-    grid-template: repeat(4, auto)/auto;
+    grid-template: repeat(4, minmax(148px, auto))/auto;
     margin-top: 40px;
   }
 }
 
 .warranty__card {
-  width: 265px;
-  height: 153px;
-  background-color: #1C1C1E;
   border-radius: 10px;
-  position: relative;
-}
-@media (max-width: 1439px) {
-  .warranty__card {
-    width: 314px;
-  }
-}
-@media (max-width: 767px) {
-  .warranty__card {
-    width: 280px;
-    height: 148px;
-  }
-}
-
-.warranty__card:hover {
-  background-color: rgba(142, 142, 152, 0.3);
+  background-color: #1C1C1E;
 }
 
 .warranty__card-container {
-  margin: 20px 20px 20px 20px;
+  padding: 20px;
 }
 
 .warranty__card-title {
+  color: #FFFFFF;
   font-weight: 500;
   margin-bottom: 38px;
   font-size: 18px;
   line-height: 18px;
 }
+@media (max-width: 767px) {
+  .warranty__card-title {
+    margin-bottom: 36px;
+  }
+}
 
 .warranty__card-text {
+  max-width: 225px;
   font-size: 15px;
   line-height: 19px;
   color: #8E8E98;
+}
+@media (max-width: 1439px) {
+  .warranty__card-text {
+    max-width: 274px;
+  }
 }
 @media (max-width: 767px) {
   .warranty__card-text {
     font-size: 12px;
     line-height: 18px;
+    max-width: 240px;
   }
 }
 
-.warranty__link {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 1;
+.warranty__card:hover {
+  background-color: rgba(142, 142, 152, 0.3);
 }
 
 .main__support {
@@ -828,7 +819,6 @@ input:focus {
 @media (max-width: 767px) {
   .footer__button {
     width: 51px;
-    overflow: hidden;
   }
 }
 

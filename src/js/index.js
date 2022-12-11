@@ -8,7 +8,11 @@ if(pageWidht < 767) {
 }
 
 function submitMessage() {
-    this.textContent = 'Круто, спасибо за доверие!';
+    if(pageWidht < 767) {
+        this.innerHTML = String.fromCodePoint(0x1F192)
+    } else {
+        this.textContent = 'Круто, спасибо за доверие!';
+    }
 };
 
 buttonAbout.addEventListener('click', submitMessage);
