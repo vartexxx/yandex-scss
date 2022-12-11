@@ -70,7 +70,6 @@
     cursor: pointer;
     @include breakpoint (mobile) {
         width: 51px;
-        overflow: hidden;
     }
 }
 
