@@ -238,6 +238,12 @@ input:focus {
   line-height: 18px;
 }
 
+@media (max-width: 767px) {
+  .about__span-dekstop {
+    display: none;
+  }
+}
+
 .main__gallery {
   margin: 0 auto;
   margin-top: 60px;
@@ -854,4 +860,10 @@ input:focus {
   color: #47474C;
   font-size: 12px;
   line-height: 18px;
+}
+
+@media (max-width: 767px) {
+  .footer__span-dekstop {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */
