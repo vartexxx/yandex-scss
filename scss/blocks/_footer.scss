@@ -99,3 +99,9 @@
     font-size: 12px;
     line-height: 18px;
 }
+
+.footer__span-dekstop {
+    @include breakpoint (mobile) {
+        display: none;  
+    }
+}

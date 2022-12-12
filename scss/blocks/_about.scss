@@ -105,3 +105,9 @@
     font-size: 12px;
     line-height: 18px;
 }
+
+.about__span-dekstop {
+    @include breakpoint (mobile) {
+        display: none;
+    }
+}
