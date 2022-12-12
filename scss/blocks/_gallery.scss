@@ -1,0 +1,107 @@
+.main__gallery {
+    margin: 0 auto;
+    margin-top: 60px;
+    padding-top: 60px;
+    max-width: calc(1440px - 30px * 2);
+    @include breakpoint (tablet) {
+        max-width: calc(768px - 60px * 2);
+        padding-top: 52px;
+        margin-top: 0px;
+    }
+    @include breakpoint (mobile) {
+        max-width: calc(320px - 20px * 2);
+        margin-top: 20px;
+        padding-top: 20px;
+    }
+}
+
+.gallery__container {
+    display: grid;
+    grid-template-columns: 448px calc(630px - 448px) 730px;
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: 
+    'first-image yellow yellow'
+    'green green second-image';
+    @include breakpoint (tablet) {
+        grid-template-columns: repeat(3, auto);
+        grid-template-areas: 
+        'first-image first-image yellow'
+        'green second-image second-image';
+    }
+    @include breakpoint (mobile) {
+        grid-template-columns: auto;
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas: 
+        'first-image'
+        'yellow'
+        'green'
+        'second-image';
+        row-gap: 20px;
+    }
+}
+
+.gallery__image-one {
+    width: 448px;
+    height: 230px;
+    grid-area: first-image;
+    border-radius: 10px;
+    @include breakpoint (mobile) {
+        width: 280px;
+        height: 142px;
+        border-radius: 4px;
+    }
+}
+
+.gallery__image-two {
+    width: 730px;
+    height: 552px;
+    grid-area: second-image;
+    border-radius: 10px;
+    margin-left: 20px;
+    @include breakpoint (tablet) {
+        width: 455px;
+        height: 344px;
+    }
+    @include breakpoint (mobile) {
+        width: 280px;
+        height: 211px;
+        margin: 0;
+        border-radius: 4px;
+    }
+}
+
+.gallery__yellow {
+    width: 912px;
+    height: 230px;
+    background-color: $yellow-color;
+    grid-area: yellow;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    @include breakpoint (tablet) {
+        width: 180px;
+        height: 230px;
+    }
+    @include breakpoint (mobile) {
+        width: 280px;
+        height: 67px;
+        margin: 0;
+        border-radius: 4px;
+    }
+}
+.gallery__green {
+    width: 630px;
+    height: 552px;
+    background-color: $green-color;
+    grid-area: green;
+    border-radius: 10px;
+    @include breakpoint (tablet) {
+        width: 173px;
+        height: 344px;
+    }
+    @include breakpoint (mobile) {
+        width: 280px;
+        height: 124px;
+        border-radius: 4px;
+    }
+}

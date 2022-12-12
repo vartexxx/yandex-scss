@@ -1,0 +1,86 @@
+.main__warranty {
+    padding-top: 60px;
+    @include breakpoint (mobile) {
+        padding-top: 30px;
+    }
+}
+
+.warranty__container {
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.warranty__link {
+    text-decoration: none;
+    background-color: $services-color;
+}
+
+.warranty__title {
+    margin-top: 60px;
+    font-size: 32px;
+    line-height: 40px;
+    @include breakpoint (tablet) {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    @include breakpoint (mobile) {
+        margin-top: 40px;
+        font-size: 12px;
+        line-height: 18px;
+    }
+}
+
+.warranty__cards {
+    margin-top: 60px;
+    display: grid;
+    grid-template: auto / repeat(4, auto);
+    column-gap: 20px;
+    @include breakpoint (tablet) {
+        grid-template: repeat(2, auto) / repeat(2, auto);
+        row-gap: 20px;
+    }
+    @include breakpoint (mobile) {
+        grid-template: repeat(4, minmax(148px, auto)) / auto;
+        margin-top: 40px;
+    }
+}
+
+.warranty__card {
+    border-radius: 10px;
+    background-color: $services-color;
+}
+
+.warranty__card-container {
+    padding: 20px;
+}
+
+.warranty__card-title {
+    color: $white_text-color;
+    font-weight: 500;
+    margin-bottom: 38px;
+    font-size: 18px;
+    line-height: 18px;
+    @include breakpoint (mobile) {
+        margin-bottom: 36px;
+    }
+}
+
+.warranty__card-text {
+    max-width: 225px;
+    font-size: 15px;
+    line-height: 19px;
+    color: $grey_text-color;
+    @include breakpoint (tablet) {
+        max-width: 274px;
+    }
+    @include breakpoint (mobile) {
+        font-size: 12px;
+        line-height: 18px;
+        max-width: 240px;
+    }
+}
+
+.warranty__card:hover {
+    background-color: $input-hover-color;
+}

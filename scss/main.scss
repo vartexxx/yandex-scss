@@ -1,0 +1,14 @@
+@import '../src/normalize.css';
+@import './base/base';
+@import './base/reset';
+@import './base/variables';
+
+//Blocks
+@import './blocks/header';
+@import './blocks/about';
+@import './blocks/gallery';
+@import './blocks/info';
+@import './blocks/services';
+@import './blocks/warranty';
+@import './blocks/support';
+@import './blocks/footer';

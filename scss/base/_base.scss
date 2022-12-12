@@ -1,0 +1,56 @@
+@import './variables';
+$white_text-color: #FFFFFF;
+$grey_input-color: #47474C;
+$grey_text-color: #8E8E98;
+$black-color: #000000;
+$green-color: #25e197;
+$yellow-color: #FFD233;
+$input-color: rgba(142, 142, 152, 0.2);
+$input-hover-color: rgba(142, 142, 152, 0.3);
+$services-color: #1C1C1E;
+$border-color: #151515;
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: url(../../src/fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: url(../../src/fonts/Roboto-Medium.ttf);
+}
+
+body {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    background-color: $black-color;
+    color: $white_text-color;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    text-rendering: optimizeLegibility;
+    font-variant-numeric: lining-nums;
+}
+
+.container {
+    max-width: calc(1440px - 160px * 2);
+    @include breakpoint (tablet) {
+        max-width: calc(768px - 60px * 2);
+    }
+    @include breakpoint (mobile) {
+        max-width: calc(320px - 20px * 2);
+    }
+}
+
+input:hover {
+    background-color: $input-hover-color;
+}
+
+button:hover {
+    background-color: $input-hover-color;
+}
