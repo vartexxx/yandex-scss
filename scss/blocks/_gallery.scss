@@ -24,7 +24,6 @@
     'green green second-image';
     @include breakpoint (tablet) {
         grid-template-columns: repeat(3, auto);
-        grid-template-rows: repeat(2, auto);
         grid-template-areas: 
         'first-image first-image yellow'
         'green second-image second-image';

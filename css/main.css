@@ -274,7 +274,6 @@ input:focus {
 @media (max-width: 1439px) {
   .gallery__container {
     grid-template-columns: repeat(3, auto);
-    grid-template-rows: repeat(2, auto);
     grid-template-areas: "first-image first-image yellow" "green second-image second-image";
   }
 }
